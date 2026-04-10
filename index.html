@@ -3,22 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Fritanga La Masaya</title>
+
   <style>
     body {
       margin: 0;
       background: #000;
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* 👈 importante */
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
     }
+
     img {
       max-width: 100%;
       height: auto;
     }
+
+    .boton {
+      margin: 20px;
+      padding: 15px 25px;
+      background: #ff7a00; /* 🟠 naranja */
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .boton:hover {
+      background: #e66a00;
+    }
   </style>
 </head>
+
 <body>
+
   <img src="menu.jpeg" alt="Menú">
+
+  <a class="boton" href="https://wa.me/50557499209" target="_blank">
+    🍗 Pedir por WhatsApp
+  </a>
+
 </body>
 </html>
