@@ -11,27 +11,27 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start; /* 👈 empieza desde arriba */
       min-height: 100vh;
       font-family: Arial, sans-serif;
     }
 
     img {
       width: 100%;
-      max-width: 500px;
+      max-width: 900px; /* 👈 MÁS GRANDE en PC */
       height: auto;
     }
 
     .boton {
       display: block;
-      width: 100%;
-      max-width: 500px;
+      width: 100%; /* 👈 ocupa todo el ancho de la imagen */
+      max-width: 900px; /* 👈 igual que la imagen */
       margin: 20px auto;
-      padding: 40px 0;
+      padding: 35px 0; /* 👈 alto bonito */
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 40px;
+      font-size: 36px; /* 👈 grande pero elegante */
       border-radius: 10px;
       font-weight: bold;
       text-align: center;
