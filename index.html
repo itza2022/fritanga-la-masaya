@@ -8,45 +8,38 @@
     body {
       margin: 0;
       background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       font-family: Arial, sans-serif;
     }
 
     img {
       width: 100%;
+      max-width: 500px;
       height: auto;
-      display: block;
     }
 
     .boton {
       display: block;
       width: 100%;
-      padding: 20px 0;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 15px 0;
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 6vw; /* 👈 CLAVE: tamaño dinámico */
+      font-size: 18px;
+      border-radius: 10px;
       font-weight: bold;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
     .boton:hover {
       background: #e66a00;
-    }
-
-    /* 👇 SOLO PARA PC */
-    @media (min-width: 768px) {
-      img {
-        width: 40%; /* 👈 agranda la imagen en PC */
-        margin: auto;
-        display: block;
-      }
-
-      .boton {
-        width: 40%;
-        margin: auto;
-        font-size: 32px;
-        padding: 25px 0;
-      }
     }
   </style>
 </head>
