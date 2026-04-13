@@ -3,49 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <title>Fritanga La Masaya</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
       margin: 0;
       background: #000;
+      font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start; /* 👈 empieza desde arriba */
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
     }
 
     img {
       width: 100%;
-      max-width: 900px; /* 👈 MÁS GRANDE en PC */
       height: auto;
+      display: block;
+      max-width: 100vw;
+      /* Quita height fija. Así, si la imagen es muy alta, el usuario puede hacer scroll */
     }
 
     .boton {
-      display: block;
-      width: 100%; /* 👈 ocupa todo el ancho de la imagen */
-      max-width: 900px; /* 👈 igual que la imagen */
-      margin: 20px auto;
-      padding: 35px 0; /* 👈 alto bonito */
+      width: 100%;
+      max-width: 650px;
+      margin: 32px auto 16px auto;
+      padding: 38px 0;
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 36px; /* 👈 grande pero elegante */
-      border-radius: 10px;
+      font-size: 42px;
+      border-radius: 16px;
       font-weight: bold;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      display: block;
+      letter-spacing: 1px;
+      line-height: 1.2;
     }
 
-    .boton:hover {
+    .boton:active, .boton:hover {
       background: #e66a00;
+    }
+
+    /* Opcional: que el botón quede SIEMPRE visible al final, aún con scroll largo (puedes quitar este bloque si prefieres que scrollee normal) */
+    /*
+    .boton {
+      position: sticky;
+      bottom: 0;
+      z-index: 10;
+    }
+    */
+
+    /* Móvil: fuente responsive */
+    @media (max-width: 768px) {
+      .boton {
+        font-size: 9vw;
+        padding: 32px 0;
+      }
+      img {
+        max-width: 100vw;
+      }
     }
   </style>
 </head>
 
 <body>
-
   <img src="menu.jpeg" alt="Menú">
 
   <a class="boton" href="https://wa.me/50557499209" target="_blank">
