@@ -8,31 +8,27 @@
     body {
       margin: 0;
       background: #000;
-      display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       font-family: Arial, sans-serif;
     }
 
     img {
       width: 100%;
-      max-width: 500px; /* 👈 mismo ancho que el botón */
-      height: auto;
+      height: 100vh;
+      object-fit: cover;/* 👈 mismo ancho que el botón */
+      display: block;
     }
 
     .boton {
       display: block;
-      width: 100%;
-      max-width: 500px; /* 👈 igual que la imagen */
+      width: 100%;/* 👈 igual que la imagen */
       margin: 20px auto;
       padding: 15px 0;
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 18px;
-      border-radius: 10px;
+      font-size: 25px;
+      border-radius: 0px;
       font-weight: bold;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
