@@ -9,6 +9,13 @@
       margin: 0;
       background: #000;
       font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center; /* 👈 centra todo */
+    }
+
+    .contenedor {
+      width: 100%;
+      max-width: 480px; /* 👈 simula ancho de celular */
     }
 
     img {
@@ -20,14 +27,13 @@
     .boton {
       display: block;
       width: 100%;
-      padding: 30px 0;        /* 👈 más alto */
+      padding: 25px 0;
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 36px;        /* 👈 grande como pediste */
+      font-size: 32px; /* 👈 grande pero equilibrado */
       font-weight: bold;
       text-align: center;
-      letter-spacing: 1px;    /* 👈 se ve más elegante */
     }
 
     .boton:hover {
@@ -38,11 +44,13 @@
 
 <body>
 
-  <img src="menu.jpeg" alt="Menú">
+  <div class="contenedor">
+    <img src="menu.jpeg" alt="Menú">
 
-  <a class="boton" href="https://wa.me/50557499209" target="_blank">
-    🍗 Pedir por WhatsApp
-  </a>
+    <a class="boton" href="https://wa.me/50557499209" target="_blank">
+      🍗 Pedir por WhatsApp
+    </a>
+  </div>
 
 </body>
 </html>
