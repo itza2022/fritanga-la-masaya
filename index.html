@@ -9,13 +9,6 @@
       margin: 0;
       background: #000;
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center; /* 👈 centra todo */
-    }
-
-    .contenedor {
-      width: 100%;
-      max-width: 480px; /* 👈 simula ancho de celular */
     }
 
     img {
@@ -27,11 +20,11 @@
     .boton {
       display: block;
       width: 100%;
-      padding: 25px 0;
+      padding: 20px 0;
       background: #ff7a00;
       color: white;
       text-decoration: none;
-      font-size: 32px; /* 👈 grande pero equilibrado */
+      font-size: 6vw; /* 👈 CLAVE: tamaño dinámico */
       font-weight: bold;
       text-align: center;
     }
@@ -39,18 +32,32 @@
     .boton:hover {
       background: #e66a00;
     }
+
+    /* 👇 SOLO PARA PC */
+    @media (min-width: 768px) {
+      img {
+        width: 40%; /* 👈 agranda la imagen en PC */
+        margin: auto;
+        display: block;
+      }
+
+      .boton {
+        width: 40%;
+        margin: auto;
+        font-size: 32px;
+        padding: 25px 0;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="contenedor">
-    <img src="menu.jpeg" alt="Menú">
+  <img src="menu.jpeg" alt="Menú">
 
-    <a class="boton" href="https://wa.me/50557499209" target="_blank">
-      🍗 Pedir por WhatsApp
-    </a>
-  </div>
+  <a class="boton" href="https://wa.me/50557499209" target="_blank">
+    🍗 Pedir por WhatsApp
+  </a>
 
 </body>
 </html>
